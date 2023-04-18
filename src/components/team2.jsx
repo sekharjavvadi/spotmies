@@ -17,7 +17,7 @@ export default function TeamSlide2() {
       name: "Satish Kumar Saride",
       designation: "Founder & CEO",
       social: {
-        twitter: "https://twitter.com/satish_saride",
+        // twitter: "https://twitter.com/satish_saride",
         linkedin: "https://www.linkedin.com/in/saride-satish-kumar-59a26a187",
       },
     },
