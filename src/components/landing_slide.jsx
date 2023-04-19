@@ -89,7 +89,7 @@ const LandingSlide = () => {
                 .scrollIntoView({ behavior: "smooth" });
             }}
             type={"button"}
-            className={`gil-reg text-sm flex flex-row items-center justify-center hover:bg-white hover:text-bg1 rounded-sm min-w-[120px]  min-h-[40px] mt-4 bg-transparent text-white border border-white animated`}
+            className={`gil-reg text-xs md:text-sm flex flex-row items-center justify-center hover:bg-white hover:text-bg1 rounded-sm md:min-w-[120px] min-w-[100px]  md:min-h-[40px] min-h-[30px] mt-4 bg-transparent text-white border border-white animated`}
           >
             Read More
             <AiOutlineArrowRight className="ml-2" />
