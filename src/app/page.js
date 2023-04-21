@@ -13,26 +13,10 @@ export default function Home() {
         />
 
         <link rel="shortcut icon" href="/favicon.ico" />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
       </Head>
-      {/* <Script
+      <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-P6RMHX00WX`}
       />
 
       <Script strategy="lazyOnload">
@@ -40,12 +24,11 @@ export default function Home() {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+        gtag('config', 'G-P6RMHX00WX', {
         page_path: window.location.pathname,
         });
     `}
-      </Script> */}
-
+      </Script>
       <HomePage />
     </div>
   );
