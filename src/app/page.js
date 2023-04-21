@@ -5,6 +5,9 @@ import Script from "next/script";
 export default function Home() {
   return (
     <div>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -20,9 +23,7 @@ export default function Home() {
         });
     `}
       </Script>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </Head>
+
       <HomePage />
     </div>
   );
