@@ -65,7 +65,7 @@ export default function TeamSlide() {
               {/* add content here
                */}
               <Fade bottom>
-                <p className="text-5xl gil-bold ">
+                <p className="md:text-5xl gil-bold text-3xl">
                   {" "}
                   We Are <span className="text-primary">Result</span> Driven
                   Team

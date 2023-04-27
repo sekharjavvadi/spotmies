@@ -16,6 +16,7 @@ import Testimonials from "./testimonials";
 import DesignSlide from "./designSlide";
 import TechSlide from "./technologies";
 import HowWeStart from "./how_we_start_project";
+import Mentor2 from "./mentor2";
 
 export default function HomePage() {
   return (
@@ -31,11 +32,11 @@ export default function HomePage() {
       <Testimonials />
       <TeamSlide />
       <TeamSlide2 />
+      <Mentor2 />
       {/* <Mentors /> */}
 
-      <ArticlesList />
-
       <Faq />
+      <ArticlesList />
       <ContactUs />
       <FooterBar />
     </div>
