@@ -1,29 +1,17 @@
 "use client";
 import React, { useEffect, useState, Suspense } from "react";
-import HoverButton from "./reusableComponent/hoverButton";
-import {
-  AiOutlineArrowRight,
-  AiOutlineFileDone,
-  AiOutlineSearch,
-  AiOutlineSwap,
-  AiOutlineUsergroupAdd,
-} from "react-icons/ai";
-
-const video =
-  // "https://nftstorage.link/ipfs/bafybeifueea4vkn7eojj4ja7bupwyjca7nrutdqxscj6h3tq7jw7rizgbq";
-  // "https://nftstorage.link/ipfs/bafybeifueea4vkn7eojj4ja7bupwyjca7nrutdqxscj6h3tq7jw7rizgbq";
-  "https://nftstorage.link/ipfs/bafybeiauwo34kmplru7lokrqz35axqq4byf3mqrrkx67taybrgw4vkjo5a";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const image =
   // "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80";
-  "https://nftstorage.link/ipfs/bafybeifur6x6mg6u6465nojbgtuckodzghkeovjoltga7cysdzmuyvj7ku";
+  // "https://nftstorage.link/ipfs/bafybeifur6x6mg6u6465nojbgtuckodzghkeovjoltga7cysdzmuyvj7ku";
+  "https://user-images.githubusercontent.com/63062130/235426000-7fe76fdf-a3d4-4f5c-8068-6388ffebac2f.jpeg";
 
 const LandingSlide = () => {
   return (
     <section
       className="h-screen w-full flex flex-col justify-center items-center relative bg-bg1"
       id="home"
-      
     >
       <div
         className="absolute inset-0 bg-black opacity-40 w-full h-full rounded-none "
@@ -34,7 +22,7 @@ const LandingSlide = () => {
       </div>
 
       <div
-      className="absolute inset-0 w-full h-full rounded-none "
+        className="absolute inset-0 w-full h-full rounded-none "
         style={{
           // background image
           backgroundImage: `url(${image})`,

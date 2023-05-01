@@ -176,7 +176,7 @@ export function PopUp({ title, body, show, setShow }) {
             setShow(false);
           }}
         >
-          <AiOutlineCloseCircle size="2rem" />
+          <AiOutlineCloseCircle size="2rem" color="black" />
         </div>
       </div>
     </div>
