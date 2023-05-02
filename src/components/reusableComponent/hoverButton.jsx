@@ -16,7 +16,8 @@ export default function HoverButton({ text, className, icon, type, onClick,loadi
       )}
     >
       {loading ? "Please Wait..." : text}
-      {icon && <AiOutlineArrowRight className="ml-2" />}
+      {icon && <span className="ml-2" />}
+      {icon && icon}
     </button>
   );
 }
