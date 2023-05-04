@@ -6,8 +6,10 @@ import {
   AiOutlineAppstoreAdd,
   AiOutlineArrowRight,
   AiOutlineAudit,
+  AiOutlineCodeSandbox,
   AiOutlineDollar,
   AiOutlineFileImage,
+  AiOutlineMobile,
   AiOutlineStar,
   AiOutlineWallet,
 } from "react-icons/ai";
@@ -19,10 +21,7 @@ export default function BlockchainService() {
     {
       title: "DApp Development",
       icon: (
-        <AiOutlineAppstoreAdd
-          size="5rem"
-          className="text-primary ml-[-10px] icon"
-        />
+        <AiOutlineCodeSandbox size="5rem" className="text-primary ml-[-10px] icon" />
       ),
       description:
         "DApp is a decentralized application built on a blockchain network that provides transparency, security, and reliability to end-users. By integrating DApp into your website, you can offer your users a secure and decentralized environment to interact with your services and products.",

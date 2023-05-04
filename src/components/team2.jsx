@@ -23,25 +23,26 @@ export default function TeamSlide2() {
     },
     {
       image:
-        "https://nftstorage.link/ipfs/bafkreidskjiaj65kdyjji47lwcrupcnkj7myn5tqh7c2qnlepsiljdh2fq",
-      name: "Venkat",
-      designation: "Product Architect",
+        "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2Fsekhar.jpg?alt=media&token=03bc9e11-ad9b-428d-8bd2-e661d82b42cb",
+      name: "Sekhar javvadi",
+      designation: "Co-Founder & Tech Lead",
       social: {
-        twitter: "https://twitter.com/PvrRox?t=6nDjRpE4_9LYeLAHlYd4cQ&s=09",
-        linkedin: "https://www.linkedin.com/in/venkat-p-79b366119",
+        twitter: "https://twitter.com/SekharJavvadi",
+        linkedin: "https://www.linkedin.com/in/sekhar-javvadi-987380158",
+        // github: "https://github.com/sekharjavvadi",
       },
     },
     {
       image:
-        "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2Fsekhar.jpg?alt=media&token=03bc9e11-ad9b-428d-8bd2-e661d82b42cb",
-      name: "Sekhar javvadi",
-      designation: "Product Manager",
+        "https://nftstorage.link/ipfs/bafkreidskjiaj65kdyjji47lwcrupcnkj7myn5tqh7c2qnlepsiljdh2fq",
+      name: "Venkat",
+      designation: "Product Architect",
       social: {
-        twitter: "https://twitter.com/SekharJavvadi",
-        linkedin: "https://www.linkedin.com/in/sekhar-javvadi-987380158",
-        github: "https://github.com/sekharjavvadi",
+        // twitter: "https://twitter.com/PvrRox?t=6nDjRpE4_9LYeLAHlYd4cQ&s=09",
+        linkedin: "https://www.linkedin.com/in/venkat-p-79b366119",
       },
     },
+ 
     {
       image:
         "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2Fhemanth.jpg?alt=media&token=fb20a381-2884-4f31-85be-0095bd3c55e8",

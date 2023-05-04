@@ -103,6 +103,11 @@ export const Navbarr = () => {
     setIsOpen(false);
   };
 
+  const scheduleMeeting = () => {
+    const calendlyLink = "https://calendly.com/sekhar_javvadi/30min";
+    window.open(calendlyLink, "_blank");
+  };
+
   useEffect(() => {
     const navigationBar = document.getElementById("navigationBar");
     // navigation bar color change when it's reach to 100vh from top
@@ -200,13 +205,14 @@ export const Navbarr = () => {
           >
             Contact Us
           </a>
-          {/* <a
+          <a
+            onClick={scheduleMeeting}
             className={`${
               toggleNavbar ? "text-primary" : "text-white"
-            }  mx-4 border-b-2 border-transparent  cursor-pointer`}
+            }  mx-4 border-b-2 border-secundary cursor-pointer`}
           >
-            <AiOutlineSearch className="text-2xl hover:text-primary" />
-          </a> */}
+            Schedule a Call
+          </a>
         </div>
       </div>
       <div
@@ -222,10 +228,10 @@ export const Navbarr = () => {
         </a>
 
         <a
-          onClick={() => navigation("articles")}
+          onClick={() => navigation("portfolio")}
           className="block px-4 py-2 text-primary2 border-b-2 border-transparent hover:border-secundary cursor-pointer"
         >
-          Blogs
+          Portfolio
         </a>
         <a
           onClick={() => navigation("aboutUs")}
@@ -238,6 +244,12 @@ export const Navbarr = () => {
           className="block px-4 py-2 text-primary2 border-b-2 border-transparent hover:border-secundary cursor-pointer"
         >
           Contact Us
+        </a>
+        <a
+          onClick={scheduleMeeting}
+          className="block px-4 py-2 text-primary2 border-b-2 border-transparent hover:border-secundary cursor-pointer"
+        >
+          Schedule a Call
         </a>
       </div>
     </nav>

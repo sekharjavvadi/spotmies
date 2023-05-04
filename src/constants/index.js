@@ -339,6 +339,19 @@ export const clients = [
     image:
       "https://nftstorage.link/ipfs/bafybeia4pjv3msjwzsssqvxdldpg6nipi4dxzcsgdrqwdfnncgstudmif4",
   },
+  {
+    name: "The 10x Academy",
+    image: "https://user-images.githubusercontent.com/63062130/236141959-fca188d4-e5f8-4fbb-b08c-00a1641a56f4.png",
+
+  },
+  {
+    name: "No Drafts",
+    image: "https://user-images.githubusercontent.com/63062130/236141972-13662de3-6b16-41b4-a69e-accfc061dbb4.png"
+  },
+  {
+    name: "Vihaan electrix",
+    image: "https://user-images.githubusercontent.com/63062130/236141975-bae3a963-8b32-40ee-8e91-4cadab832d81.png"
+  }
 ];
 
 // create a function to redirect to social media links like twitter, instagram, etc
@@ -351,7 +364,7 @@ export const socialMediaRedirect = (mediaName) => {
   const facebook = "https://www.facebook.com/";
   const linkedin = "https://www.linkedin.com/company/spotmies";
   const github = "https://github.com/spotmies";
-  const behance = "https://www.behance.net/naveenkatava";
+  const behance = "https://www.behance.net/spotmiesllp";
   const medium = "https://medium.com/@spotmies";
 
   switch (mediaName) {
