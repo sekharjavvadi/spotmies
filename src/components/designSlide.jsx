@@ -20,7 +20,7 @@ export default function DesignSlide() {
       <div className="absolute inset-0 w-full h-full bg-bg1 opacity-30"></div>
       <div className="absolute top-0 flex flex-row w-full items-start justify-start pl-[5vw]">
         <Fade bottom>
-          <p className=" text-text_color1 text-4xl md:text-6xl gil-bold text-center pt-10 z-50">
+          <p className=" text-text_color1 text-4xl md:text-6xl lg:text-7xl gil-bold text-center pt-10 z-50">
             Look At Our designs
           </p>
         </Fade>

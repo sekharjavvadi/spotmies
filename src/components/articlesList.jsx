@@ -62,7 +62,7 @@ const ArticlesList = () => {
           </div>
           <div className="opacity-40">
             <Fade bottom>
-              <p className="w-full md:w-[80%] pb-5 opacity-60 text-sm md:text-xl">
+              <p className="w-full md:w-[70%] pb-5 opacity-60 text-sm md:text-xl lg:text-2xl">
                 Stay up-to-date with the latest trends and insights in your
                 industry by following Spotmies's news and articles. We publish
                 regular updates on topics ranging from technology and innovation
@@ -71,23 +71,23 @@ const ArticlesList = () => {
             </Fade>
           </div>
           <Fade>
-            <div className="flex flex-col md:flex-row w-full items-center justify-between">
+            <div className="flex flex-col md:flex-row w-full items-center justify-between ">
               {article.map((item, index) => (
                 <div
                   key={index}
-                  className="text-primary2 bg-white flex flex-col items-start justify-between h-fit md:h-[450px] w-full md:w-[400px] rounded-2xl shadow-sm  p-3 md:m-0 m-2"
+                  className="text-primary2 bg-white flex flex-col items-start justify-between md:justify-between lg:justify-around h-fit md:h-[450px] w-full md:w-[400px] lg:w-[500px] rounded-2xl shadow-sm  p-3 md:m-0 m-2"
                 >
                   <Fade>
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="h-[50%] w-full object-cover rounded-lg"
+                      className="h-[65%] md:h-[45%] lg:h-[55%] w-full object-cover rounded-lg"
                     />
                   </Fade>
                   <div className="flex flex-col items-start justify-center pt-4 pl-2">
                     <div className="opacity-50">
                       <Fade bottom>
-                        <p className="text-xs text-primary2 opacity-70">
+                        <p className="text-xs lg:text-sm text-primary2 opacity-70">
                           {item.when}
                         </p>
                       </Fade>
@@ -99,7 +99,7 @@ const ArticlesList = () => {
                     </Fade>
                     <div className="opacity-50">
                       <Fade bottom>
-                        <p className="opacity-70 text-sm text-primary2 text-ellipsis w-full overflow-hidden h-[40px]">
+                        <p className="opacity-70 text-sm md:text-sm lg:text-lg text-primary2 text-ellipsis w-full overflow-hidden lg:overflow-visible h-[40px]">
                           {item.description}
                         </p>
                       </Fade>
@@ -112,10 +112,10 @@ const ArticlesList = () => {
                           window.open(item.link, "_blank");
                         }}
                       >
-                        <p className="gil-bold text-sm text-primary">
+                        <p className="gil-bold text-sm lg:text-lg md:text-sm text-primary">
                           KNOW MORE
                         </p>
-                        <BsArrowUpRightCircleFill className="inline-block text-md ml-2 text-primary" />
+                        <BsArrowUpRightCircleFill className="inline-block text-md md:text-md lg:text-lg ml-2 text-primary" />
                       </div>
                     </Fade>
                   </div>

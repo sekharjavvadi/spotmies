@@ -21,7 +21,10 @@ export default function BlockchainService() {
     {
       title: "DApp Development",
       icon: (
-        <AiOutlineCodeSandbox size="5rem" className="text-primary ml-[-10px] icon" />
+        <AiOutlineCodeSandbox
+          size="5rem"
+          className="text-primary ml-[-10px] icon"
+        />
       ),
       description:
         "DApp is a decentralized application built on a blockchain network that provides transparency, security, and reliability to end-users. By integrating DApp into your website, you can offer your users a secure and decentralized environment to interact with your services and products.",
@@ -85,12 +88,12 @@ export default function BlockchainService() {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
+      breakpoint: { max: 4000, min: 1500 },
       items: 2,
       partialVisibilityGutter: 70,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1499, min: 1024 },
       items: 2,
       partialVisibilityGutter: 10,
     },
@@ -110,10 +113,11 @@ export default function BlockchainService() {
     <Wrapper
       title="Revolutionize Your Experience with Web 3.0"
       className="bg-bg2 min-h-fit"
+      titleClassName="lg:text-7xl"
     >
       <div className="flex flex-col-reverse md:flex-row w-full justify-between items-start min-h-[20vh] py-[2vh]">
         <div className="flex flex-col w-[90%] md:w-[35%] text-text_color2 mt-4 md:mt-0">
-          <p className="text-xl text-justify opacity-60">
+          <p className="text-xl lg:text-xl text-justify opacity-60">
             Web 3.0 services are necessary to meet the demands of a
             decentralized and trustless digital landscape. By leveraging
             blockchain technology, our services provide secure and transparent
@@ -126,9 +130,20 @@ export default function BlockchainService() {
             text={"Contact Us"}
             className="mt-4 w-fit rounded-md"
             icon={<AiOutlineArrowRight />}
+            onClick={() =>{
+              // navigate to contact page /#contact
+
+              window.document
+              .getElementById("contactUs")
+              .scrollIntoView({ behavior: "smooth" });
+          
+
+
+
+            }}
           />
         </div>
-        <div className="md:w-[60%] w-[100%]">
+        <div className="md:w-[60%] w-[100%] ">
           <Carousel responsive={responsive} partialVisible={true}>
             {blockchainServices.map((service, index) => (
               <div key={index}>
@@ -145,8 +160,12 @@ export default function BlockchainService() {
     return (
       <div className="hover-card text-bg1 w-[350px] h-[330px] rounded-2xl border-opacity-30 border cursor-pointer border-bg1 bg-bg2 hover:bg-bg1 transition-all  duration-700 ease-in-out p-6 flex flex-col items-start">
         {icon}
-        <p className="text-2xl gil-bold mt-4 hover-card-text">{title}</p>
-        <p className="text-sm mt-4 hover-card-text opacity-50">{description}</p>
+        <p className="text-2xl lg:text-3xl gil-bold mt-4 hover-card-text">
+          {title}
+        </p>
+        <p className="text-sm lg:text-lg mt-4 hover-card-text opacity-50">
+          {description}
+        </p>
       </div>
     );
   }

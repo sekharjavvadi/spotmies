@@ -90,7 +90,7 @@ export default function TechStack() {
     >
       <div className="mt-5 px-0 md:px-5">
         <Fade bottom>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-16">
+          <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-16">
             {technologies.map((tech, index) => (
               <div
                 className="relative flex items-center rounded-md hover:scale-110 transition-all duration-700 ease-in-out cursor-pointer opacity-100 hover:opacity-100 grayscale hover:grayscale-0"

@@ -8,12 +8,12 @@ export default function Testimonials() {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-      partialVisibilityGutter: 70,
+      breakpoint: { max: 4000, min: 1500 },
+      items: 2,
+      partialVisibilityGutter: 280,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1499, min: 1024 },
       items: 2,
       partialVisibilityGutter: 70,
     },
@@ -41,11 +41,11 @@ export default function Testimonials() {
         )}
       </Carousel>
 
-      <p className="text-4xl md:text-5xl text-left text-text_color2 gil-bold mt-10">
+      <p className="text-4xl md:text-5xl text-left text-text_color2 gil-bold mt-10 lg:pt-10">
         Our Clients
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-8">
         {clients.map((client, index) => (
           <div
             className="relative flex justify-around items-center px-4 py-4 bg-bg2 rounded-md hover:scale-110 transition-all duration-700 ease-in-out cursor-pointer"
@@ -71,7 +71,7 @@ export default function Testimonials() {
         className="bg-bg2 flex flex-col justify-between w-[80vw] min-h-[300px] max-h-[350px] md:max-h-[350px] md:min-h-[300px] md:w-[500px] gradient-05 rounded-2xl m-2 md:p-6 p-4 shadow-sm border border-bg1"
       >
         {/* <div className="flex flex-col h-full justify-between"> */}
-        <p className="text-primary2 opacity-80 text-md  md:text-xl  text-justify text-ellipsis">
+        <p className="text-primary2 opacity-80 text-md  md:text-xl  lg:text-2xl text-justify text-ellipsis">
           "{text}"
         </p>
 
@@ -83,10 +83,10 @@ export default function Testimonials() {
               className="w-[35px] h-[35px] md:w-[60px] md:h-[60px] object-cover rounded-full"
             />
             <div className="flex flex-col ml-1 md:ml-4">
-              <p className="text-primary2 font-bold text-md md:text-xl">
+              <p className="text-primary2 font-bold text-md md:text-xl lg:text-2xl">
                 {name}
               </p>
-              <p className="text-primary2 opacity-70 text-xs md:text-md">
+              <p className="text-primary2 opacity-70 text-xs md:text-md lg:text-lg">
                 {position}
               </p>
             </div>

@@ -17,7 +17,7 @@ export default function TeamSlide() {
       />
       <div className="flex flex-col justify-center w-[90%] h-full py-[8%] m-auto">
         <Fade bottom>
-          <p className="gil-bold text-3xl md:text-6xl text-left pb-12 text-text_color2">
+          <p className="gil-bold text-3xl md:text-6xl lg:text-7xl text-left pb-12 text-text_color2">
             Meet Our Team
           </p>
         </Fade>
@@ -61,11 +61,11 @@ export default function TeamSlide() {
           </div>
           <div className="flex flex-col items-center justify-between h-full ml-0 md:ml-6 w-full md:w-[40%]">
             {/* this div contains 2 div, 1st one is 40% 2nd one is 60% heights respectively */}
-            <div className="text-primary2 flex flex-col items-start justify-center w-full h-[45%] rounded-xl mb-2 md:mb-0 industry-card relative">
+            <div className="text-primary2 flex flex-col items-start justify-around py-[2%] w-full h-[45%] rounded-xl mb-2 md:mb-0 industry-card relative">
               {/* add content here
                */}
               <Fade bottom>
-                <p className="md:text-5xl gil-bold text-3xl">
+                <p className="md:text-5xl lg:text-6xl gil-bold text-3xl">
                   {" "}
                   We Are <span className="text-primary">Result</span> Driven
                   Team
@@ -73,7 +73,7 @@ export default function TeamSlide() {
               </Fade>
               <div className="opacity-60">
                 <Fade bottom>
-                  <p className="text-sm opacity-60">
+                  <p className="text-sm lg:text-xl opacity-60 lg:w-[90%] text-justify">
                     At our company, quality is of the utmost importance when it
                     comes to development. We strive to ensure that all of our
                     products are of the highest standard and built to last. We
@@ -86,7 +86,7 @@ export default function TeamSlide() {
               </div>
               <Fade bottom>
                 <p
-                  className="gil-med text-sm md:text-md text-primary flex items-center cursor-pointer"
+                  className="gil-med text-sm md:text-md lg:text-lg text-primary flex items-center cursor-pointer"
                   onClick={() => {
                     setIsPopupOpen(true);
                   }}
