@@ -101,12 +101,12 @@ export default function TeamSlide2() {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 1500 },
+      breakpoint: { max: 4000, min: 1900 },
       items: 4,
       partialVisibilityGutter: 60,
     },
     desktop: {
-      breakpoint: { max: 1499, min: 1024 },
+      breakpoint: { max: 1899, min: 1024 },
       items: 3,
       partialVisibilityGutter: 80,
     },

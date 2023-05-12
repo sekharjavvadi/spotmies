@@ -88,12 +88,12 @@ export default function BlockchainService() {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 1500 },
+      breakpoint: { max: 4000, min: 1900 },
       items: 2,
       partialVisibilityGutter: 70,
     },
     desktop: {
-      breakpoint: { max: 1499, min: 1024 },
+      breakpoint: { max: 1899, min: 1024 },
       items: 2,
       partialVisibilityGutter: 10,
     },

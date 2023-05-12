@@ -97,8 +97,8 @@ const PortfolioSection = () => {
                             size="2.5rem"
                             className="cursor-pointer mr-6 hover:text-primary text-white"
                             onClick={() => {
-                              setCurrentIndex(index);
-                              setShowpopup(true);
+                              // setCurrentIndex(index);
+                              // setShowpopup(true);
                             }}
                           />
                         )}
@@ -156,9 +156,8 @@ const PortfolioSection = () => {
             Our portfolio works
           </h2>
           <p className="text-text_color2 text-sm opacity-60 text-justify mx-4 md:ml-0 md:w-2/3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptas, quod, quia, voluptate quae voluptates quibusdam
-            voluptatibus quos quas quidem quia voluptates quibusdam
+            Our expertise across various industries will help you to bridge the
+            gaps with our innovative solutions
           </p>
           <div className="flex flex-wrap mt-8">
             {filterWork.map((industry, index) => (
@@ -183,8 +182,8 @@ const PortfolioSection = () => {
                         color="white"
                         className="cursor-pointer"
                         onClick={() => {
-                          setCurrentIndex(index);
-                          setShowpopup(true);
+                          // setCurrentIndex(index);
+                          // setShowpopup(true);
                         }}
                       />
                       <AiOutlineGithub

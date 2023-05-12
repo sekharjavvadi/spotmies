@@ -152,8 +152,9 @@ export const socials = [
 export const testimonials = [
   {
     name: "Vamsi Gummadi",
-    position: "CEO at Sweken",
+    position: "Founder & CEO at Sweken",
     when: "8 months ago",
+    timeStamp: "1657612842000",
     image:
       "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2F289647986_7627729177302421_965938227967618398_n.jpeg?alt=media&token=6572dc5b-d900-4060-88f7-e3feff77d479",
     text: "Spotmies team provided top-notch customer service. Our project was completed in a timely manner, and the quality of the work was outstanding.",
@@ -162,6 +163,7 @@ export const testimonials = [
     name: "Ravi Unukuru",
     position: "Web3 Entrepreneur & YouTuber",
     when: "1 months ago",
+    timeStamp: "1673510442000",
     image:
       "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2FWhatsApp%20Image%202022-12-23%20at%206.40.13%20PM.jpeg?alt=media&token=af2e1828-0d53-4f9a-8ffa-37ae7e6e7afa",
     text: "UI Designer in this team is very good at suggesting ideas to get more attention for the clients businesses while frontend & the blockchain devs are exceptionally experienced & excellent in their respective fields. Really impressed by their work, 10/10 would recommend.",
@@ -169,11 +171,44 @@ export const testimonials = [
 
   {
     name: "Anand Boddeti",
-    position: "A Square Gokarting",
+    position: "Founder At A-Square Entertainments",
+    timeStamp: "1676188842000",
     when: "2 months ago",
     image:
       "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2FScreenshot%202022-12-27%20at%2012.42.06%20PM.png?alt=media&token=a7431523-3c17-4361-b12f-731720f6e35c",
     text: "We chose spotmies because of responsive and trust work on delivery on time. They implemented cleared designs and latest strategies for outlining and reporting for every stage of the development process.",
+  },
+  {
+    name: "Swaroop",
+    position: "Founder at Advait Labs & Decentrialz",
+    timeStamp: "1683706279000",
+    image:
+      "https://user-images.githubusercontent.com/63062130/237905955-c9e67527-64a7-4b83-bc0b-d6541d1a28f4.jpeg",
+    text: "The team at Spotmies is highly dedicated & efficient in their work. Their responsiveness & commitment towards implementing tech ideas is commendable. I feel fortunate to have learned about them through a referral, and I am eagerly looking forward to continue working with them in the future.",
+  },
+  {
+    name: "Mahidhar",
+    position: "Founder & CEO at Edumoon",
+    timeStamp: "1683706279000",
+    image:
+      "https://user-images.githubusercontent.com/63062130/237905972-e60a7053-78e9-4a19-a093-de2342bac05d.jpg",
+    text: "Spotmies is a dynamic company with an impressive portfolio of completed projects. Their commitment to excellence and top-notch solutions make them a valuable partner",
+  },
+  {
+    name: "Dileep",
+    position: "Founder at chaloride",
+    timeStamp: "1683706279000",
+    image:
+      "https://user-images.githubusercontent.com/63062130/237905963-7826cbd3-b081-4cd8-9433-eaec203167a2.jpeg",
+    text: "Spotmies has been a reliable partner for our business, delivering high-quality services and products that have exceeded our expectations.",
+  },
+  {
+    name: "Venkat",
+    position: "Founder at Mr bikes",
+    timeStamp: "1683706279000",
+    image:
+      "https://user-images.githubusercontent.com/63062130/237906002-be5c749a-6eff-4620-b475-40683acfa331.jpeg",
+    text: "Spotmies is not just a service provider; they are visionaries who understand the pulse of our industry. With their cutting-edge product designing, they have given us a competitive edge and positioned us as leaders in the market.",
   },
 ];
 
@@ -341,17 +376,19 @@ export const clients = [
   },
   {
     name: "The 10x Academy",
-    image: "https://user-images.githubusercontent.com/63062130/236141959-fca188d4-e5f8-4fbb-b08c-00a1641a56f4.png",
-
+    image:
+      "https://user-images.githubusercontent.com/63062130/236141959-fca188d4-e5f8-4fbb-b08c-00a1641a56f4.png",
   },
   {
     name: "No Drafts",
-    image: "https://user-images.githubusercontent.com/63062130/236141972-13662de3-6b16-41b4-a69e-accfc061dbb4.png"
+    image:
+      "https://user-images.githubusercontent.com/63062130/236141972-13662de3-6b16-41b4-a69e-accfc061dbb4.png",
   },
   {
     name: "Vihaan electrix",
-    image: "https://user-images.githubusercontent.com/63062130/236141975-bae3a963-8b32-40ee-8e91-4cadab832d81.png"
-  }
+    image:
+      "https://user-images.githubusercontent.com/63062130/236141975-bae3a963-8b32-40ee-8e91-4cadab832d81.png",
+  },
 ];
 
 // create a function to redirect to social media links like twitter, instagram, etc

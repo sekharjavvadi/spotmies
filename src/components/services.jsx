@@ -130,11 +130,11 @@ export default function Services() {
         <div className="absolute inset-0 bg-black opacity-20 hover:opacity-40 opacity-layer rounded-md md:rounded-xl" />
         <div className="absolute inset-0 w-full h-full p-3 md:p-6 lg:p-10 flex flex-col">
           <Fade bottom>
-            <p className="text-white gil-bold text-xl md:text-3xl lg:text-4xl">
+            <p className="text-white gil-bold text-md md:text-3xl lg:text-4xl">
               {title}
             </p>
           </Fade>
-          <p className="opacity-70 text-white text-md md:text-xl lg:text-2xl onHoverShow text-justify pt-4">
+          <p className="text-white text-xs md:text-md lg:text-2xl onHoverShow text-justify pt-0 lg:pt-6 md:pt-4">
             {description}
           </p>
           <BsArrowRight
