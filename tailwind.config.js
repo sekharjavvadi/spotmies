@@ -23,7 +23,7 @@ module.exports = {
       },
       screens: {
         md: "1000px",
-        lg: "1500px",
+        lg: "1900px",
         // => @media (min-width: 1440px) { ... }
       },
     },
