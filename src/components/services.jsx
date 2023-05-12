@@ -134,7 +134,7 @@ export default function Services() {
               {title}
             </p>
           </Fade>
-          <p className="text-white text-xs md:text-md lg:text-2xl onHoverShow text-justify pt-0 lg:pt-6 md:pt-4">
+          <p className="text-white text-xs md:text-lg lg:text-2xl onHoverShow text-justify pt-0 lg:pt-6 md:pt-4">
             {description}
           </p>
           <BsArrowRight
