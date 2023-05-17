@@ -13,7 +13,7 @@ export default function TeamSlide2() {
   const teamJson = [
     {
       image:
-        "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2Fsatish-min.jpeg?alt=media&token=f65f20e9-992d-4cd0-a0fe-7b9624fe3553",
+        "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_07-.jpeg",
       name: "Satish Kumar Saride",
       designation: "Founder & CEO",
       social: {
@@ -23,7 +23,7 @@ export default function TeamSlide2() {
     },
     {
       image:
-        "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2Fsekhar.jpg?alt=media&token=03bc9e11-ad9b-428d-8bd2-e661d82b42cb",
+        "https://raw.githubusercontent.com/pdkkg/images/858b0957133c26f8c629524cb4d7074eb66f535f/sekhar.jpg",
       name: "Sekhar javvadi",
       designation: "Co-Founder & Tech Lead",
       social: {
@@ -34,7 +34,7 @@ export default function TeamSlide2() {
     },
     {
       image:
-        "https://nftstorage.link/ipfs/bafkreidskjiaj65kdyjji47lwcrupcnkj7myn5tqh7c2qnlepsiljdh2fq",
+        "https://raw.githubusercontent.com/pdkkg/images/858b0957133c26f8c629524cb4d7074eb66f535f/ProductDesigner.jpeg",
       name: "Venkat",
       designation: "Product Architect",
       social: {
@@ -45,7 +45,7 @@ export default function TeamSlide2() {
 
     {
       image:
-        "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2Fhemanth.jpg?alt=media&token=fb20a381-2884-4f31-85be-0095bd3c55e8",
+        "https://raw.githubusercontent.com/pdkkg/images/858b0957133c26f8c629524cb4d7074eb66f535f/hemanth.jpg",
       name: "Hemanth Kumar",
       designation: "Head of Blockchain Development",
       social: {
@@ -56,7 +56,7 @@ export default function TeamSlide2() {
     },
     {
       image:
-        "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/assets%2Fnaveen.jpeg?alt=media&token=d9c2da83-cebe-4138-a5a8-39ef50f19dd0",
+        "https://raw.githubusercontent.com/pdkkg/images/858b0957133c26f8c629524cb4d7074eb66f535f/naveen.jpeg",
       name: "Naveen Kumar",
       designation: "Head of Product Design",
       social: {

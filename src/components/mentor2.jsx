@@ -73,7 +73,7 @@ export default function Mentor2() {
             className="w-full h-full rounded-2xl hover:scale-110 transition-all duration-700 ease-in-out"
             style={{
               backgroundImage:
-                "url(https://nftstorage.link/ipfs/bafybeiaohu77reodwrtyq2vkqvcvwzzddd3rejia3qknewybhcyk65aktq)",
+                "url(https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_08_RaviSir.png)",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",

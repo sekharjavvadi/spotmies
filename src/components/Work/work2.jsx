@@ -97,8 +97,8 @@ const PortfolioSection = () => {
                             size="2.5rem"
                             className="cursor-pointer mr-6 hover:text-primary text-white"
                             onClick={() => {
-                              // setCurrentIndex(index);
-                              // setShowpopup(true);
+                              setCurrentIndex(index);
+                              setShowpopup(true);
                             }}
                           />
                         )}
@@ -182,8 +182,8 @@ const PortfolioSection = () => {
                         color="white"
                         className="cursor-pointer"
                         onClick={() => {
-                          // setCurrentIndex(index);
-                          // setShowpopup(true);
+                          setCurrentIndex(index);
+                          setShowpopup(true);
                         }}
                       />
                       <AiOutlineGithub
@@ -250,7 +250,7 @@ export function ProjectDetails({ index, showMaximize }) {
   return (
     <div className="w-full">
       <div className="flex flex-row w-full items-center justify-between">
-        <p className=" text-text_color2 text-3xl gil-bold">
+        <p className=" text-text_color2 text-2xl lg:text-4xl md:text-3xl gil-bold">
           {worksJson[index]?.title}
         </p>
 
@@ -277,7 +277,7 @@ export function ProjectDetails({ index, showMaximize }) {
           autoPlaySpeed={2000}
         >
           {worksJson[index]?.overview?.images?.map((item, key) => (
-            <div key={key} className="w-full h-[500px] p-4 rounded-md">
+            <div key={key} className="w-full h-[300px] lg:h-[600px] md:h-[500px] p-4 rounded-md">
               <img
                 src={item}
                 className="w-full h-full object-cover rounded-md"
@@ -334,7 +334,7 @@ export function ProjectDetails({ index, showMaximize }) {
 
       {/* project links */}
 
-      <div className="mt-5 w-full">
+      {/* <div className="mt-5 w-full">
         <p className="text-text_color2 text-xl gil-bold">
           Check out the project
         </p>
@@ -367,7 +367,7 @@ export function ProjectDetails({ index, showMaximize }) {
             />
           )}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

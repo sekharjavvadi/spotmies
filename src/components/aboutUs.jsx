@@ -89,7 +89,7 @@ export default function AboutUs() {
             <div
               className=" h-full w-full object-cover rounded-3xl  group-hover:scale-110  transition-all duration-700 ease-in-out"
               style={{
-                backgroundImage: `url(https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)`,
+                backgroundImage: `url(https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/06_.png)`,
 
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
@@ -112,7 +112,7 @@ export default function AboutUs() {
           <Fade>
             <div className="group overflow-hidden h-[50%] md:h-full w-full md:w-[45%] rounded-xl md:rounded-3xl">
               <img
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/07_.png"
                 alt=""
                 className="w-full h-full object-cover rounded-xl md:rounded-3xl m-auto group-hover:scale-110 transition-all duration-700 ease-in-out"
               />

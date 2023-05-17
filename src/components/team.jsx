@@ -30,7 +30,7 @@ export default function TeamSlide() {
                   description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                   image:
-                    "https://nftstorage.link/ipfs/bafybeiblblxgs3cwtvbaze4tjlbaz3mz3vt34rrzwsjc2htb3umcd2a55y",
+                    "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_01_.jpeg",
                 })}
               </div>
             </Fade>
@@ -42,7 +42,7 @@ export default function TeamSlide() {
                     description:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     image:
-                      "https://nftstorage.link/ipfs/bafybeicok63j7p4674n76w7i4bd2yfdwle6r5nzascdxuuuoxy7cdkepnu",
+                      "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_02_.jpeg",
                   })}
                 </div>
               </Fade>
@@ -53,7 +53,7 @@ export default function TeamSlide() {
                     description:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     image:
-                      "https://nftstorage.link/ipfs/bafybeiglio42xmbwpo3twmh4rposg4fin5plvw6aoek5r2bubbd3xrn4vm",
+                      "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_03_.jpeg",
                   })}
                 </div>
               </Fade>
@@ -102,7 +102,7 @@ export default function TeamSlide() {
                   description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                   image:
-                    "https://nftstorage.link/ipfs/bafybeif65bbuoxkm5ocwd5xpn5xdu2dyaknkw7kowkemuthqpniq3wqcfi",
+                    "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_05_.jpeg",
                 })}
               </div>
             </Fade>

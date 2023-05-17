@@ -23,7 +23,7 @@ export default function FooterBar() {
           <div className="flex flex-wrap justify-between mb-12">
             <div className="w-full md:w-1/3 lg:w-1/3 pr-4">
               <img
-                src="/spotmies_banner.png"
+                src="https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_13_.png"
                 alt="logo"
                 className="w-40 mb-4"
               />
