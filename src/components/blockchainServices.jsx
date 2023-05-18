@@ -158,7 +158,7 @@ export default function BlockchainService() {
 
   function card(title, icon, description) {
     return (
-      <div className="hover-card text-bg1 w-[350px] h-[330px] rounded-2xl border-opacity-30 border cursor-pointer border-bg1 bg-bg2 hover:bg-bg1 transition-all  duration-700 ease-in-out p-6 flex flex-col items-start">
+      <div className="hover-card text-bg1 w-[90vw] h-[330px] md:w-[350px] md:h-[330px] lg:w-[350px] lg:h-[330px] rounded-2xl border-opacity-30 border cursor-pointer border-bg1 bg-bg2 hover:bg-bg1 transition-all  duration-700 ease-in-out p-6 flex flex-col items-start">
         {icon}
         <p className="text-2xl lg:text-3xl gil-bold mt-4 hover-card-text">
           {title}

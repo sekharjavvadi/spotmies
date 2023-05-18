@@ -10,8 +10,8 @@ export default function Project() {
   useEffect(() => {
     // get the id from url and set it to state
     setId(window.location.href.split("/").pop());
-    console.log(id);
-    console.log(window.location.href.split("/").pop());
+    // console.log(id);
+    // console.log(window.location.href.split("/").pop());
   }, []);
 
   return (

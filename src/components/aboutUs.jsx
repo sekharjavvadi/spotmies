@@ -100,7 +100,7 @@ export default function AboutUs() {
           </div>
         </Fade>
       </div>
-      <div className="bg-bg2 w-full h-fit md:h-[40vh] pt-[10vh] md:pt-[20vh]">
+      <div className="bg-bg2 w-full h-fit md:h-[40vh] pt-[4vh] md:pt-[20vh]">
         <div className="pt-[50px] m-auto w-[90%]">
           <Fade>
             <ClientCarouselLogos />
@@ -127,7 +127,7 @@ export default function AboutUs() {
             </Fade>
             <Fade bottom>
               {" "}
-              <p className="gil-bold text-4xl md:text-5xl lg:text-8xl w-[90%]">
+              <p className="gil-bold text-3xl md:text-5xl lg:text-8xl lg:w-[90%] w-full md:w-[90%]">
                 Making Quality Services <br /> Accessible to{" "}
                 <span className="text-primary">Everyone</span>
               </p>

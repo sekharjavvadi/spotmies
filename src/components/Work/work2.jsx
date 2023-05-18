@@ -176,25 +176,31 @@ const PortfolioSection = () => {
                       {industry.description}
                     </p>
                     {/* <div className="flex flex-row items-center justify-between w-full absolute bottom-4 right-4"> */}
-                    <div className="flex flex-row items-center justify-between w-[30%] absolute bottom-4 right-4 onHoverShow">
+                    <div className="flex flex-row items-center justify-between w-fit absolute bottom-4 right-4 onHoverShow">
                       <AiOutlineEye
-                        size="1.3rem"
+                        size="1.8rem"
                         color="white"
-                        className="cursor-pointer"
+                        className="cursor-pointer mr-4"
                         onClick={() => {
                           setCurrentIndex(index);
                           setShowpopup(true);
                         }}
                       />
-                      <AiOutlineGithub
+                      {/* <AiOutlineGithub
                         size="1.1rem"
                         color="white"
                         className="cursor-pointer"
-                      />
+                      /> */}
                       <MdOpenInNew
-                        size="1rem"
+                        size="1.4rem"
                         color="white"
                         className="cursor-pointer"
+                        onClick={() => {
+                          if (industry?.completed) {
+                            return window.open(industry?.projectLink, "_blank");
+                          }
+                          alert("Project is not completed yet");
+                        }}
                       />
                     </div>
                   </div>
@@ -277,7 +283,10 @@ export function ProjectDetails({ index, showMaximize }) {
           autoPlaySpeed={2000}
         >
           {worksJson[index]?.overview?.images?.map((item, key) => (
-            <div key={key} className="w-full h-[300px] lg:h-[600px] md:h-[500px] p-4 rounded-md">
+            <div
+              key={key}
+              className="w-full h-[300px] lg:h-[600px] md:h-[500px] p-4 rounded-md"
+            >
               <img
                 src={item}
                 className="w-full h-full object-cover rounded-md"

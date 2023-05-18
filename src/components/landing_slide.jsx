@@ -137,7 +137,7 @@ export const Navbarr = ({ noScrollEffect }) => {
 
   return (
     <nav
-      className="bg-transparent fixed w-full z-10 px-5 animated-down"
+      className="bg-transparent fixed w-full z-10 px-5 md:px-[5vw] lg:px-[5vw] animated-down"
       id="navigationBar"
     >
       <div className="container mx-auto flex justify-between items-center py-4 lg:py-6">

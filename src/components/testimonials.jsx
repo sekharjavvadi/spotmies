@@ -14,7 +14,7 @@ export default function Testimonials() {
     const diffInMonths = diffInMilliseconds / (1000 * 60 * 60 * 24 * 30.44); // Approximate average month length
 
     const monthsAgo = Math.floor(diffInMonths);
-    console.log(monthsAgo);
+    // console.log(monthsAgo);
     if (monthsAgo < 12) {
       if (monthsAgo === 0) {
         return "Few days ago";
@@ -79,7 +79,7 @@ export default function Testimonials() {
         Our Clients
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-8">
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-2 md:gap-4 mt-2 md:mt-8">
         {clients.map((client, index) => (
           <div
             className="relative flex justify-around items-center px-4 py-4 bg-bg2 rounded-md hover:scale-110 transition-all duration-700 ease-in-out cursor-pointer"
@@ -88,7 +88,7 @@ export default function Testimonials() {
             <img
               src={client.image}
               alt="ethereum"
-              className="cursor-pointer h-[40px] w-[90px] md:h-[60px] md:w-[160px] grayscale hover:grayscale-0 object-contain m-auto hover:scale-110 transition-all duration-700 ease-in-out "
+              className="cursor-pointer h-[60px] w-[160px] lg:grayscale md:grayscale hover:grayscale-0 object-contain m-auto hover:scale-110 transition-all duration-700 ease-in-out "
             />
             {/* <h3 className="text-2xl gil-med text-gray-900">
                     {client.name}
