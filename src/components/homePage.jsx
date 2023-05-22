@@ -17,6 +17,8 @@ import DesignSlide from "./designSlide";
 import TechSlide from "./technologies";
 import HowWeStart from "./how_we_start_project";
 import Mentor2 from "./mentor2";
+import TechStack from "./techStack";
+import BlockchainService from "./blockchainServices";
 
 export default function HomePage() {
   return (
@@ -29,6 +31,8 @@ export default function HomePage() {
       <HowWeStart />
       <DesignSlide />
       <TechSlide />
+      <BlockchainService />
+      <TechStack />
       <Testimonials />
       <TeamSlide />
       <TeamSlide2 />
