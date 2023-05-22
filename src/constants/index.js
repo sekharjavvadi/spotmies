@@ -389,6 +389,17 @@ export const clients = [
     image:
       "https://user-images.githubusercontent.com/63062130/236141975-bae3a963-8b32-40ee-8e91-4cadab832d81.png",
   },
+  {
+    name: "CGRUM",
+    image:
+      "https://raw.githubusercontent.com/pdkkg/images/90e541b79f9a1ccb39ee14da711dc084152755e0/CGRUM%20logo.png",
+  },
+  {
+    name: "NandiKrushi",
+    image:
+      "https://raw.githubusercontent.com/pdkkg/images/90e541b79f9a1ccb39ee14da711dc084152755e0/nandhi%20krushi.png",
+  }
+
 ];
 
 // create a function to redirect to social media links like twitter, instagram, etc
@@ -399,6 +410,7 @@ export const socialMediaRedirect = (mediaName) => {
   const telegram = "https://t.me/";
   const youtube = "https://www.youtube.com/@spotmies4765";
   const facebook = "https://www.facebook.com/";
+  
   const linkedin = "https://www.linkedin.com/company/spotmies";
   const github = "https://github.com/spotmies";
   const behance = "https://www.behance.net/spotmiesllp";

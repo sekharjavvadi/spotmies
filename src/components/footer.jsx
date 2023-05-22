@@ -94,6 +94,11 @@ export default function FooterBar() {
                 Sign up for our newsletter and stay up-to-date with our latest
                 news and offers.
               </p>
+              <div className="mb-4">
+              <h2 className="text-lg lg:text-xl gil-bold mb-4">Recognized By</h2>
+                <img src="https://raw.githubusercontent.com/pdkkg/images/90e541b79f9a1ccb39ee14da711dc084152755e0/Asset%201%403x.png" className="w-[250px] md:w-full lg:w-full" />
+              </div>
+
               <form className="flex mb-4 lg:text-xl">
                 <input
                   required
@@ -110,11 +115,11 @@ export default function FooterBar() {
               </form>
             </div>
           </div>
-          <div className="w-full flex flex-row items-center justify-between">
+          <div className="w-full flex flex-col md:flex-row items-center justify-between">
             <div className="text-sm lg:text-lg text-gray-400">
               © 2023 Spotmies LLP. All Rights Reserved.
             </div>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 md:pt-0 lg:pt-0 pt-4">
               <a
                 aria-label="GitHub"
                 onClick={() => socialMediaRedirect("instagram")}
@@ -163,6 +168,7 @@ export default function FooterBar() {
               </a>
             </div>
           </div>
+    
         </div>
       </footer>
     </div>
