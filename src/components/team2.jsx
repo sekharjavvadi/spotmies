@@ -56,7 +56,7 @@ export default function TeamSlide2() {
     },
     {
       image:
-        "https://raw.githubusercontent.com/pdkkg/images/858b0957133c26f8c629524cb4d7074eb66f535f/naveen.jpeg",
+        "https://github.com/spotmies/images/assets/63062130/044abb59-672c-4622-86a7-dc98da276cb4",
       name: "Naveen Kumar",
       designation: "Head of Product Design",
       social: {

@@ -53,7 +53,7 @@ export default function TeamSlide() {
                     description:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     image:
-                      "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_03_.jpeg",
+                      "https://user-images.githubusercontent.com/63062130/240163219-96a12133-f89e-4eb1-9c93-cd9e61da6e00.jpg",
                   })}
                 </div>
               </Fade>
@@ -102,7 +102,7 @@ export default function TeamSlide() {
                   description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                   image:
-                    "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_05_.jpeg",
+                    "https://user-images.githubusercontent.com/63062130/240160727-62a81bce-5a0c-4912-beb3-f6e57ab9b81c.jpeg",
                 })}
               </div>
             </Fade>
