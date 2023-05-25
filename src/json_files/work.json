@@ -5,6 +5,7 @@
     "projectLink": "https://www.schemaxtech.com",
     "tags": ["Web 2"],
     "title": "Schemax Tech",
+    "projectName": "schemax-tech",
     "completed": true,
     "overview": {
       "images": [
@@ -59,6 +60,7 @@
     "projectLink": "https://decentrialz.com",
     "tags": ["Web 2"],
     "title": "Decentrialz",
+    "projectName": "decentrialz",
     "completed": true,
     "overview": {
       "images": [
@@ -130,6 +132,7 @@
     "projectLink": "https://play.google.com/store/apps/details?id=com.asquaregokarting",
     "tags": ["Web 2"],
     "title": "A Square Go Karting",
+    "projectName": "a-square-go-karting",
     "completed": true,
     "overview": {
       "images": [
@@ -179,6 +182,7 @@
     "projectLink": "https://www.cypherb.com",
     "tags": ["Web 3"],
     "title": "Cypher-B",
+    "projectName": "cypher-b",
     "glimpse": "Recruitment Platform on the blockchain",
     "completed": true,
     "overview": {
@@ -272,6 +276,7 @@
     "projectLink": "https://indieskullsyndicate.xyz",
     "tags": ["Web 3", "NFT"],
     "title": "Indie Skull Syndicate",
+    "projectName": "indie-skull-syndicate",
     "glimpse": "NFT based project",
     "completed": true,
     "overview": {
@@ -344,6 +349,7 @@
     "projectLink": "https://itssomethingnft.xyz",
     "tags": ["Web 3", "NFT"],
     "title": "It's something NFT",
+    "projectName": "its-something-nft",
     "glimpse": "NFT based project",
     "completed": true,
     "overview": {
@@ -405,6 +411,7 @@
     "projectLink": "https://pumpendump.com",
     "tags": ["Web 3"],
     "title": "Pum Pend Ump",
+    "projectName": "pum-pend-ump",
     "completed": true,
     "overview": {
       "images": [
@@ -470,6 +477,7 @@
     "projectLink": "https://google.com",
     "tags": ["Web 2"],
     "title": "Nandikrushi",
+    "projectName": "nandikrushi",
     "completed": true,
     "overview": {
       "images": [
@@ -525,6 +533,7 @@
     "projectLink": "https://play.google.com/store/apps/details?id=com.cgrum",
     "tags": ["Web 2"],
     "title": " CGRUM",
+    "projectName": "cgrum",
     "completed": true,
     "overview": {
       "images": [
@@ -574,6 +583,7 @@
     "projectLink": "https://google.com",
     "tags": ["Web 3"],
     "title": "Crypto MX",
+    "projectName": "crypto-mx",
     "completed": false,
     "overview": {
       "images": [
@@ -625,6 +635,7 @@
     "projectLink": "https://projecthex.xyz",
     "tags": ["Web 3"],
     "title": " Project Hex",
+    "projectName": "project-hex",
     "completed": true,
     "overview": {
       "images": [
@@ -679,6 +690,7 @@
     "projectLink": "https://vihaanelectrix.in",
     "tags": ["Web 2"],
     "title": "Vihaan Electrix",
+    "projectName": "vihaan-electrix",
     "completed": true,
     "overview": {
       "images": [
@@ -738,7 +750,9 @@
     "image": "https://github.com/pdkkg/images/blob/68dfe13aec4879d52a692b7ce44bcd586b02c2b1/15_chaloRide.png?raw=true",
     "projectLink": "http://chaloride.in/bikes-for-rental-visakapatnam",
     "tags": ["Web 2"],
+
     "title": "Chalo Ride",
+    "projectName": "chalorode",
     "completed": true,
     "overview": {
       "images": [
@@ -810,6 +824,7 @@
     "projectLink": "https://www.mrbikes.in/bikes-for-rental-visakapatnam",
     "tags": ["Web 2"],
     "title": " Mr Bikes",
+    "projectName": "mr-bikes",
     "completed": true,
     "overview": {
       "images": [

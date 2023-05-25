@@ -286,7 +286,7 @@ export function ProjectDetails({ index, showMaximize }) {
             size="1.5rem"
             className="text-[#1D1D1D] hover:text-primary cursor-pointer hover:scale-110 transition-all duration-700 ease-in-out"
             onClick={() => {
-              window.open(`/projectdetails/${index}`, "_self");
+              window.open(`/projects/${worksJson[index]?.projectName}`, "_self");
               // open in the same tab
             }}
           />
