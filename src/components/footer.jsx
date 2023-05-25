@@ -25,7 +25,7 @@ export default function FooterBar() {
               <img
                 src="https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_13_.png"
                 alt="logo"
-                className="w-40 mb-4"
+                className="w-52 mb-4"
               />
               {/* <h2 className="text-lg gil-bold mb-4">About Us</h2> */}
               <p className="mb-4 text-justify lg:text-xl">
@@ -94,11 +94,6 @@ export default function FooterBar() {
                 Sign up for our newsletter and stay up-to-date with our latest
                 news and offers.
               </p>
-              <div className="mb-4">
-              <h2 className="text-lg lg:text-xl gil-bold mb-4">Recognized By</h2>
-                <img src="https://raw.githubusercontent.com/pdkkg/images/90e541b79f9a1ccb39ee14da711dc084152755e0/Asset%201%403x.png" className="w-[250px] md:w-full lg:w-full" />
-              </div>
-
               <form className="flex mb-4 lg:text-xl">
                 <input
                   required
@@ -113,6 +108,15 @@ export default function FooterBar() {
                   <AiOutlineArrowRight className="w-6 h-6" />
                 </button>
               </form>
+              <div className="pt-4">
+                <h2 className="text-lg lg:text-xl gil-bold mb-2">
+                  Recognized By
+                </h2>
+                <img
+                  src="https://raw.githubusercontent.com/pdkkg/images/90e541b79f9a1ccb39ee14da711dc084152755e0/Asset%201%403x.png"
+                  className="w-[250px] md:w-full lg:w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out cursor-pointer"
+                />
+              </div>
             </div>
           </div>
           <div className="w-full flex flex-col md:flex-row items-center justify-between">
@@ -168,7 +172,6 @@ export default function FooterBar() {
               </a>
             </div>
           </div>
-    
         </div>
       </footer>
     </div>

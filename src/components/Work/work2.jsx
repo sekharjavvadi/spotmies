@@ -16,6 +16,15 @@ import {
   SiJavascript,
   SiStellar,
   SiTailwindcss,
+  SiVercel,
+  SiFigma,
+  SiAdobexd,
+  SiVitess,
+  SiNodedotjs,
+  SiFirebase,
+  SiEthereum,
+  SiPhp,
+  SiGodaddy,
 } from "react-icons/si";
 
 import HoverButton from "../reusableComponent/hoverButton";
@@ -82,9 +91,15 @@ const PortfolioSection = () => {
                 className="w-full sm:w-1/2 lg:w-1/2 p-6 flex flex-col"
               >
                 <Fade bottom>
-                  <div className="flex-2 bg-white overflow-hidden shadow-sm rounded-2xl hover:shadow-md relative industry-card">
+                  <div className="flex-2 h-[350px] overflow-hidden shadow-sm rounded-2xl hover:shadow-md relative industry-card bg-gray-300">
                     <div className="absolute inset-0 bg-bg1 opacity-20 hover:opacity-90 opacity-layer2"></div>
-                    <div className="absolute inset-0 w-full h-full p-6 flex flex-col">
+                    <div
+                      className="absolute inset-0 w-full h-full p-6 flex flex-col cursor-pointer"
+                      onClick={() => {
+                        setCurrentIndex(index);
+                        setShowpopup(true);
+                      }}
+                    >
                       <p className="text-white gil-med text-4xl onHoverShow">
                         {industry?.title}
                       </p>
@@ -95,7 +110,7 @@ const PortfolioSection = () => {
                         {industry?.overview && (
                           <AiOutlineEye
                             size="2.5rem"
-                            className="cursor-pointer mr-6 hover:text-primary text-white"
+                            className="cursor-pointer hover:text-primary text-white"
                             onClick={() => {
                               setCurrentIndex(index);
                               setShowpopup(true);
@@ -111,7 +126,7 @@ const PortfolioSection = () => {
                             }
                           />
                         )}
-                        <MdOpenInNew
+                        {/* <MdOpenInNew
                           size="2rem"
                           className="cursor-pointer hover:text-primary text-white"
                           onClick={() => {
@@ -123,7 +138,7 @@ const PortfolioSection = () => {
                             }
                             alert("Project is not completed yet");
                           }}
-                        />
+                        /> */}
                       </div>
                     </div>
 
@@ -131,7 +146,7 @@ const PortfolioSection = () => {
                       <img
                         src={industry.image}
                         alt={industry.title}
-                        className="w-full h-[350px] object-cover mypic "
+                        className="w-full h-full object-cover mypic "
                       />
                     </a>
                   </div>
@@ -168,7 +183,13 @@ const PortfolioSection = () => {
               >
                 <div className="flex-2 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md relative industry-card">
                   <div className="absolute inset-0 bg-bg1 opacity-20 hover:opacity-70 opacity-layer"></div>
-                  <div className="absolute inset-0 w-full h-full p-6 flex flex-col">
+                  <div
+                    className="absolute inset-0 w-full h-full p-6 flex flex-col"
+                    onClick={() => {
+                      setCurrentIndex(index);
+                      setShowpopup(true);
+                    }}
+                  >
                     <p className="text-white gil-med text-2xl sm:text-4xl onHoverShow">
                       {industry.title}
                     </p>
@@ -180,7 +201,7 @@ const PortfolioSection = () => {
                       <AiOutlineEye
                         size="1.8rem"
                         color="white"
-                        className="cursor-pointer mr-4"
+                        className="cursor-pointer"
                         onClick={() => {
                           setCurrentIndex(index);
                           setShowpopup(true);
@@ -191,7 +212,7 @@ const PortfolioSection = () => {
                         color="white"
                         className="cursor-pointer"
                       /> */}
-                      <MdOpenInNew
+                      {/* <MdOpenInNew
                         size="1.4rem"
                         color="white"
                         className="cursor-pointer"
@@ -201,7 +222,7 @@ const PortfolioSection = () => {
                           }
                           alert("Project is not completed yet");
                         }}
-                      />
+                      /> */}
                     </div>
                   </div>
 
@@ -301,10 +322,23 @@ export function ProjectDetails({ index, showMaximize }) {
 
       {worksJson[index]?.overview?.content?.map((item, key) => (
         <div key={key} className="w-full pt-5">
-          <p className="text-text_color2 text-xl gil-med">{item.title}</p>
-          <p className="text-text_color2 text-lg opacity-80">
-            {item.description}
-          </p>
+          {item?.title && (
+            <p className="text-text_color2 text-2xl gil-bold">{item.title}</p>
+          )}
+          {item?.description && (
+            <p className="text-text_color2 text-lg opacity-60">
+              {item.description}
+            </p>
+          )}
+          {item?.image && (
+            <div className="w-full py-4 rounded-md ">
+              <img
+                src={item.image}
+                className="w-full object-cover rounded-md min-h-[200px] bg-slate-300"
+                alt="portfolio"
+              />
+            </div>
+          )}
         </div>
       ))}
 
@@ -325,6 +359,7 @@ export function ProjectDetails({ index, showMaximize }) {
             {item == "aws" && <SiAmazonaws color="#FF9900" size="3rem" />}
             {item == "ipfs" && <SiIpfs color="#65C2CB" size="3rem" />}
             {item == "web3" && <SiWeb3Dotjs color="#F16822" size="3rem" />}
+            {item == "ethereum" && <SiEthereum color="#3C3C3D" size="3rem" />}
             {item == "hyperledger" && (
               <SiHyperledger color="#2F3134" size="3rem" />
             )}
@@ -337,6 +372,28 @@ export function ProjectDetails({ index, showMaximize }) {
             )}
             {item == "html" && <FaHtml5 color="#E34F26" size="3rem" />}
             {item == "css" && <FaCss3 color="#1572B6" size="3rem" />}
+            {item == "vercel" && <SiVercel color="#000000" size="3rem" />}
+            {item == "figma" && <SiFigma color="#F24E1E" size="3rem" />}
+            {item == "adobexd" && <SiAdobexd color="#FF26BE" size="3rem" />}
+            {item == "vite" && <SiVitess color="#646CFF" size="3rem" />}
+            {item == "nodejs" && <SiNodedotjs color="#339933" size="3rem" />}
+            {item == "firebase" && <SiFirebase color="#FFCA28" size="3rem" />}
+            {item == "php" && <SiPhp color="#777BB4" size="3rem" />}
+            {item == "godaddy" && <SiGodaddy color="#7DB701" size="3rem" />}
+            {item == "biconomy" &&
+              imageIcon(
+                "https://raw.githubusercontent.com/pdkkg/images/43f94647a0c49df8fe085358c8c69101d6a4df53/biconomy.png"
+              )}
+
+            {item == "polygon" &&
+              imageIcon(
+                "https://user-images.githubusercontent.com/63062130/235427169-5241ccf6-6bc2-4950-a22b-60400563c2a3.png"
+              )}
+
+            {item == "metamask" &&
+              imageIcon(
+                "https://github.com/spotmies/images/assets/63062130/897969e1-0c2e-43a6-b836-a47f62b4c9c0"
+              )}
           </div>
         ))}
       </div>
@@ -379,4 +436,8 @@ export function ProjectDetails({ index, showMaximize }) {
       </div> */}
     </div>
   );
+
+  function imageIcon(url) {
+    return <img src={url} width="50px" height="50px" />;
+  }
 }

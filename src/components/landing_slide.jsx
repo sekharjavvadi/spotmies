@@ -141,7 +141,13 @@ export const Navbarr = ({ noScrollEffect }) => {
       id="navigationBar"
     >
       <div className="container mx-auto flex justify-between items-center py-4 lg:py-6">
-        <div className="flex items-center">
+        <div
+          className="flex items-center cursor-pointer"
+          onClick={() => {
+            // navigate to #home
+            window.location.href = "/";
+          }}
+        >
           <img
             src={toggleNavbar ? "/spotmies_banner.png" : "/spotmies_banner.png"}
             alt="Logo"
