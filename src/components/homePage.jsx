@@ -19,6 +19,9 @@ import HowWeStart from "./how_we_start_project";
 import Mentor2 from "./mentor2";
 import TechStack from "./techStack";
 import BlockchainService from "./blockchainServices";
+import Partners from "./partners";
+import ReaidySlide from "./reaidy";
+import ChatBot from "./chatBot";
 
 export default function HomePage() {
   return (
@@ -31,9 +34,13 @@ export default function HomePage() {
       <HowWeStart />
       <DesignSlide />
       <TechSlide />
+      <ReaidySlide />
       <BlockchainService />
       <TechStack />
+     
       <Testimonials />
+     
+      <Partners />
       <TeamSlide />
       <TeamSlide2 />
       <Mentor2 />
@@ -43,6 +50,7 @@ export default function HomePage() {
       <ArticlesList />
       <ContactUs />
       <FooterBar />
+      <ChatBot />
     </div>
   );
 }

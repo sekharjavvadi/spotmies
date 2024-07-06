@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { MdOutlineFlutterDash, MdOutlineWeb, MdWeb } from "react-icons/md";
+import { AiOutlineClose } from "react-icons/ai";
 import {
   SiFlutter,
   SiMongodb,
@@ -16,6 +17,15 @@ import {
   SiJavascript,
   SiStellar,
   SiTailwindcss,
+  SiVercel,
+  SiFigma,
+  SiAdobexd,
+  SiVitess,
+  SiNodedotjs,
+  SiFirebase,
+  SiEthereum,
+  SiPhp,
+  SiGodaddy,
 } from "react-icons/si";
 
 import HoverButton from "../reusableComponent/hoverButton";
@@ -59,8 +69,17 @@ const PortfolioSection = () => {
 
   return (
     <div className="w-[100vw] bg-white" id="portfolio">
-      <DynamicPopUp show={showpopup} setShow={setShowpopup}>
-        <ProjectDetails index={currentIndex} showMaximize={true} />
+      <DynamicPopUp show={showpopup} setShow={setShowpopup}
+      >
+        {/* <div
+          className="absolute top-[-0px] md:right-[-0px] right-0 cursor-pointer"
+          onClick={() => {
+            setShowpopup(false);
+          }}
+        >
+          <AiOutlineClose size="2rem" color="black" />
+        </div> */}
+        <ProjectDetails index={currentIndex} showMaximize={true} setShowpopup={setShowpopup} />
       </DynamicPopUp>
       <section className="bg-white py-12 m-auto w-[90%] md:block hidden">
         <div className="container mx-auto w-full">
@@ -82,9 +101,15 @@ const PortfolioSection = () => {
                 className="w-full sm:w-1/2 lg:w-1/2 p-6 flex flex-col"
               >
                 <Fade bottom>
-                  <div className="flex-2 bg-white overflow-hidden shadow-sm rounded-2xl hover:shadow-md relative industry-card">
+                  <div className="flex-2 h-[350px] overflow-hidden shadow-sm rounded-2xl hover:shadow-md relative industry-card bg-gray-300">
                     <div className="absolute inset-0 bg-bg1 opacity-20 hover:opacity-90 opacity-layer2"></div>
-                    <div className="absolute inset-0 w-full h-full p-6 flex flex-col">
+                    <div
+                      className="absolute inset-0 w-full h-full p-6 flex flex-col cursor-pointer"
+                      onClick={() => {
+                        setCurrentIndex(index);
+                        setShowpopup(true);
+                      }}
+                    >
                       <p className="text-white gil-med text-4xl onHoverShow">
                         {industry?.title}
                       </p>
@@ -95,7 +120,7 @@ const PortfolioSection = () => {
                         {industry?.overview && (
                           <AiOutlineEye
                             size="2.5rem"
-                            className="cursor-pointer mr-6 hover:text-primary text-white"
+                            className="cursor-pointer hover:text-primary text-white"
                             onClick={() => {
                               setCurrentIndex(index);
                               setShowpopup(true);
@@ -111,7 +136,7 @@ const PortfolioSection = () => {
                             }
                           />
                         )}
-                        <MdOpenInNew
+                        {/* <MdOpenInNew
                           size="2rem"
                           className="cursor-pointer hover:text-primary text-white"
                           onClick={() => {
@@ -123,7 +148,7 @@ const PortfolioSection = () => {
                             }
                             alert("Project is not completed yet");
                           }}
-                        />
+                        /> */}
                       </div>
                     </div>
 
@@ -131,7 +156,7 @@ const PortfolioSection = () => {
                       <img
                         src={industry.image}
                         alt={industry.title}
-                        className="w-full h-[350px] object-cover mypic "
+                        className="w-full h-full object-cover mypic "
                       />
                     </a>
                   </div>
@@ -164,11 +189,17 @@ const PortfolioSection = () => {
               <div
                 key={index}
                 className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:p-6 flex flex-col"
-                // whileTap={{ scale: 0.95 }}
+              // whileTap={{ scale: 0.95 }}
               >
                 <div className="flex-2 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md relative industry-card">
                   <div className="absolute inset-0 bg-bg1 opacity-20 hover:opacity-70 opacity-layer"></div>
-                  <div className="absolute inset-0 w-full h-full p-6 flex flex-col">
+                  <div
+                    className="absolute inset-0 w-full h-full p-6 flex flex-col"
+                    onClick={() => {
+                      setCurrentIndex(index);
+                      setShowpopup(true);
+                    }}
+                  >
                     <p className="text-white gil-med text-2xl sm:text-4xl onHoverShow">
                       {industry.title}
                     </p>
@@ -180,7 +211,7 @@ const PortfolioSection = () => {
                       <AiOutlineEye
                         size="1.8rem"
                         color="white"
-                        className="cursor-pointer mr-4"
+                        className="cursor-pointer"
                         onClick={() => {
                           setCurrentIndex(index);
                           setShowpopup(true);
@@ -191,7 +222,7 @@ const PortfolioSection = () => {
                         color="white"
                         className="cursor-pointer"
                       /> */}
-                      <MdOpenInNew
+                      {/* <MdOpenInNew
                         size="1.4rem"
                         color="white"
                         className="cursor-pointer"
@@ -201,7 +232,7 @@ const PortfolioSection = () => {
                           }
                           alert("Project is not completed yet");
                         }}
-                      />
+                      /> */}
                     </div>
                   </div>
 
@@ -217,9 +248,11 @@ const PortfolioSection = () => {
             ))}
           </div>
           {filterWork.length !== worksJson.length && (
-            <div className="w-full flex flex-row items-center justify-center">
-              <HoverButton text={"Show More"} onClick={showMore} />
-            </div>
+            <Fade bottom>
+              <div className="w-full flex flex-row items-center justify-center">
+                <HoverButton text={"Show More"} onClick={showMore} />
+              </div>
+            </Fade>
           )}
         </div>
       </section>
@@ -229,7 +262,7 @@ const PortfolioSection = () => {
 
 export default PortfolioSection;
 
-export function ProjectDetails({ index, showMaximize }) {
+export function ProjectDetails({ index, showMaximize, setShowpopup }) {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -253,23 +286,41 @@ export function ProjectDetails({ index, showMaximize }) {
       partialVisibilityGutter: 0,
     },
   };
+
+  const handleButtonClick = () => {
+    const websiteURL = worksJson[index]?.overview?.links?.website;
+
+    if (websiteURL) {
+      window.open(websiteURL, '_blank');
+    }
+  };
+
+
   return (
     <div className="w-full">
       <div className="flex flex-row w-full items-center justify-between">
         <p className=" text-text_color2 text-2xl lg:text-4xl md:text-3xl gil-bold">
           {worksJson[index]?.title}
         </p>
+        <div className="flex justify-between items-center gap-5 md:gap-10">
+          {worksJson[index]?.overview?.links?.website && (<HoverButton text={"Visit"} onClick={handleButtonClick} className="rounded-xl" />)}
 
-        {showMaximize && (
-          <FiMaximize2
-            size="1.5rem"
-            className="text-[#1D1D1D] hover:text-primary cursor-pointer hover:scale-110 transition-all duration-700 ease-in-out"
-            onClick={() => {
-              window.open(`/projectdetails/${index}`, "_self");
-              // open in the same tab
-            }}
-          />
-        )}
+          {/* {showMaximize && (
+            <FiMaximize2
+              size="1.5rem"
+              className="text-[#1D1D1D] hover:text-primary cursor-pointer hover:scale-110 transition-all duration-700 ease-in-out"
+              onClick={() => {
+                window.open(`/projects/${worksJson[index]?.projectName}`, "_self");
+              }}
+            />
+          )} */}
+          <div
+            className="absolute right-5 top-3 bg-white rounded-full p-2 text-[#1D1D1D] hover:text-primary cursor-pointer hover:scale-110 transition-all duration-700 ease-in-out"
+            onClick={() => setShowpopup(false)}
+          >
+            <AiOutlineClose size="1.5rem" />
+          </div>
+        </div>
       </div>
 
       {/* Image section */}
@@ -285,7 +336,7 @@ export function ProjectDetails({ index, showMaximize }) {
           {worksJson[index]?.overview?.images?.map((item, key) => (
             <div
               key={key}
-              className="w-full h-[300px] lg:h-[600px] md:h-[500px] p-4 rounded-md"
+              className="w-full h-[300px] lg:h-[600px] md:h-[600px] p-4 rounded-md"
             >
               <img
                 src={item}
@@ -301,45 +352,89 @@ export function ProjectDetails({ index, showMaximize }) {
 
       {worksJson[index]?.overview?.content?.map((item, key) => (
         <div key={key} className="w-full pt-5">
-          <p className="text-text_color2 text-xl gil-med">{item.title}</p>
-          <p className="text-text_color2 text-lg opacity-80">
-            {item.description}
-          </p>
+          {item?.title && (
+            <p className="text-text_color2 text-2xl gil-bold">{item.title}</p>
+          )}
+          {item?.description && (
+            <p className="text-text_color2 text-lg opacity-60">
+              {item.description}
+            </p>
+          )}
+          {item?.image && (
+            <div className="w-full py-4 rounded-md ">
+              <img
+                src={item.image}
+                className="w-full object-cover rounded-md min-h-[200px] bg-slate-300"
+                alt="portfolio"
+              />
+            </div>
+          )}
         </div>
       ))}
 
       {/* Technology section */}
 
       <p className="text-text_color2 text-xl gil-bold">Tech Stack Used:</p>
-      <div className="w-full flex flex-wrap pt-5">
-        {worksJson[index]?.overview?.techstack?.map((item, key) => (
-          <div key={key} className="mr-5">
-            {item == "flutter" && <SiFlutter color="#02569B" size="3rem" />}
-            {item == "reactjs" && <FaReact color="#61DBFB" size="3rem" />}
-            {item == "mongodb" && <SiMongodb color="#47A248" size="3rem" />}
-            {item == "solidity" && <SiSolidity color="#363636" size="3rem" />}
-            {item == "nextjs" && <SiNextdotjs color="#000000" size="3rem" />}
-            {item == "django" && <SiDjango color="#092E20" size="3rem" />}
-            {item == "python" && <SiPython color="#3776AB" size="3rem" />}
-            {item == "mysql" && <SiMysql color="#4479A1" size="3rem" />}
-            {item == "aws" && <SiAmazonaws color="#FF9900" size="3rem" />}
-            {item == "ipfs" && <SiIpfs color="#65C2CB" size="3rem" />}
-            {item == "web3" && <SiWeb3Dotjs color="#F16822" size="3rem" />}
-            {item == "hyperledger" && (
-              <SiHyperledger color="#2F3134" size="3rem" />
-            )}
-            {item == "javascript" && (
-              <SiJavascript color="#F7DF1E" size="3rem" />
-            )}
-            {item == "stellar" && <SiStellar color="#08B5E5" size="3rem" />}
-            {item == "tailwind" && (
-              <SiTailwindcss color="#38B2AC" size="3rem" />
-            )}
-            {item == "html" && <FaHtml5 color="#E34F26" size="3rem" />}
-            {item == "css" && <FaCss3 color="#1572B6" size="3rem" />}
-          </div>
-        ))}
+      <div className="flex justify-between">
+        <div className="w-full flex flex-wrap pt-5">
+          {worksJson[index]?.overview?.techstack?.map((item, key) => (
+            <div key={key} className="mr-5">
+              {item == "flutter" && <SiFlutter color="#02569B" size="3rem" />}
+              {item == "reactjs" && <FaReact color="#61DBFB" size="3rem" />}
+              {item == "mongodb" && <SiMongodb color="#47A248" size="3rem" />}
+              {item == "solidity" && <SiSolidity color="#363636" size="3rem" />}
+              {item == "nextjs" && <SiNextdotjs color="#000000" size="3rem" />}
+              {item == "django" && <SiDjango color="#092E20" size="3rem" />}
+              {item == "python" && <SiPython color="#3776AB" size="3rem" />}
+              {item == "mysql" && <SiMysql color="#4479A1" size="3rem" />}
+              {item == "aws" && <SiAmazonaws color="#FF9900" size="3rem" />}
+              {item == "ipfs" && <SiIpfs color="#65C2CB" size="3rem" />}
+              {item == "web3" && <SiWeb3Dotjs color="#F16822" size="3rem" />}
+              {item == "ethereum" && <SiEthereum color="#3C3C3D" size="3rem" />}
+              {item == "hyperledger" && (
+                <SiHyperledger color="#2F3134" size="3rem" />
+              )}
+              {item == "javascript" && (
+                <SiJavascript color="#F7DF1E" size="3rem" />
+              )}
+              {item == "stellar" && <SiStellar color="#08B5E5" size="3rem" />}
+              {item == "tailwind" && (
+                <SiTailwindcss color="#38B2AC" size="3rem" />
+              )}
+              {item == "html" && <FaHtml5 color="#E34F26" size="3rem" />}
+              {item == "css" && <FaCss3 color="#1572B6" size="3rem" />}
+              {item == "vercel" && <SiVercel color="#000000" size="3rem" />}
+              {item == "figma" && <SiFigma color="#F24E1E" size="3rem" />}
+              {item == "adobexd" && <SiAdobexd color="#FF26BE" size="3rem" />}
+              {item == "vite" && <SiVitess color="#646CFF" size="3rem" />}
+              {item == "nodejs" && <SiNodedotjs color="#339933" size="3rem" />}
+              {item == "firebase" && <SiFirebase color="#FFCA28" size="3rem" />}
+              {item == "php" && <SiPhp color="#777BB4" size="3rem" />}
+              {item == "godaddy" && <SiGodaddy color="#7DB701" size="3rem" />}
+              {item == "biconomy" &&
+                imageIcon(
+                  "https://raw.githubusercontent.com/spotmies/images/43f94647a0c49df8fe085358c8c69101d6a4df53/biconomy.png"
+                )}
+
+              {item == "polygon" &&
+                imageIcon(
+                  "https://user-images.githubusercontent.com/63062130/235427169-5241ccf6-6bc2-4950-a22b-60400563c2a3.png"
+                )}
+
+              {item == "metamask" &&
+                imageIcon(
+                  "https://github.com/spotmies/images/assets/63062130/897969e1-0c2e-43a6-b836-a47f62b4c9c0"
+                )}
+            </div>
+          ))}
+        </div>
+        <div>
+          {worksJson[index]?.overview?.links?.website && (
+            <HoverButton text={"Visit Application"} onClick={handleButtonClick} className="rounded-xl" />
+          )}
+        </div>
       </div>
+
 
       {/* project links */}
 
@@ -379,4 +474,8 @@ export function ProjectDetails({ index, showMaximize }) {
       </div> */}
     </div>
   );
+
+  function imageIcon(url) {
+    return <img src={url} width="50px" height="50px" />;
+  }
 }

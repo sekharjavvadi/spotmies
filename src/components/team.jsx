@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import { BsArrowRight, BsArrowUpRightCircle } from "react-icons/bs";
 import { Fade } from "react-reveal";
 import { PopUp } from "./services";
-
+import img from "../../public/img.jpg";
+import group from "../../public/group.jpg"
 export default function TeamSlide() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   return (
@@ -30,7 +31,7 @@ export default function TeamSlide() {
                   description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                   image:
-                    "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_01_.jpeg",
+                    "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/spotmies_site%2FSeventhFolder%2Fourteam1.jpeg?alt=media&token=db726f2f-9873-4dce-8ac1-b02b97c9b806",
                 })}
               </div>
             </Fade>
@@ -41,8 +42,7 @@ export default function TeamSlide() {
                     title: "Web Development",
                     description:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    image:
-                      "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_02_.jpeg",
+                    image:"https://reaidystorage.blob.core.windows.net/spotmiespublic/img.jpg",
                   })}
                 </div>
               </Fade>
@@ -53,7 +53,7 @@ export default function TeamSlide() {
                     description:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     image:
-                      "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_03_.jpeg",
+                      "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/spotmies_site%2FSeventhFolder%2Fourteam3.jpg?alt=media&token=f71e80ce-901f-46c5-a4e1-8917449312fa",
                   })}
                 </div>
               </Fade>
@@ -101,9 +101,10 @@ export default function TeamSlide() {
                   title: "Mobile Development",
                   description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                  image:
-                    "https://raw.githubusercontent.com/pdkkg/images/cc21efb2212e862f2b5acfe08e9d2fe9c671e566/t_05_.jpeg",
-                })}
+                  image: "group.jpg"
+                    // "https://firebasestorage.googleapis.com/v0/b/web3-spotmies.appspot.com/o/spotmies_site%2FNew%20images%2FPXL_20230630_064756373-1(1).jpg?alt=media&token=e6189f9e-955d-4555-bf84-edea46984820",
+                  
+})}
               </div>
             </Fade>
           </div>
